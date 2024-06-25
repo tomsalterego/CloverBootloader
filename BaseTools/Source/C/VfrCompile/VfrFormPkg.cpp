@@ -1491,7 +1491,8 @@ CIfrRecordInfoDB::IfrRecordAdjust (
         //
         // report error; not found
         //
-        snprintf (ErrorMsg, sizeof(ErrorMsg),  "Inconsistent OpCode Record list invalid QuestionId is 0x%X", QuestionId);
+        snprintf (ErrorMsg, sizeof(ErrorMsg), "Inconsistent OpCode Record list invalid QuestionId is 0x%X", QuestionId);
+
         gCVfrErrorHandle.PrintMsg (0, NULL, "Error", ErrorMsg);
         Status = VFR_RETURN_MISMATCHED;
         break;
